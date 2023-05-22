@@ -13,7 +13,7 @@ Topic- Image Classification via Architectural Style:
   2. Tudor Revival
   3. Queen Anne
 
-Data Source: Kaggle (images off 100-200 per style) 
+Data Source: Kaggle (images of 100-200 per style) 
 - https://www.kaggle.com/datasets/dumitrux/architectural-styles-dataset?resource=download
 
 
