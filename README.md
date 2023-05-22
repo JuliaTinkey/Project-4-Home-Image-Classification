@@ -13,7 +13,7 @@ Applications/Tools:
   1. Machine Learning: 
       - Scikit-learn
       - Keras - implementing neural networks
-      - cv2 & PIL (Pillow)- image processing
+      - cv2 (OpenCV) & PIL (Pillow)- image processing/recognition
       - NumPy
   3. HTML/CSS
   4. Python Pandas / Python Matplotlib
