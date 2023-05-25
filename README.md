@@ -20,7 +20,7 @@ Applications/Tools:
 
 Topic- Image Classification via Architectural Style: 
   1. Modern: Bauhas , Deconstructivism, International Style, Postmodern, and Novelty Architecture
-  2. Traditional: American Foursquare, Geogian, Tudor Revival, Greek Revival, Palladian, and Queen Anne Architecture.
+  2. Traditional: American Foursquare, Georgian, Tudor Revival, Greek Revival, Palladian, and Queen Anne Architecture.
 
 Data Source: Kaggle (images of 100-200 per style) 
 - https://www.kaggle.com/datasets/dumitrux/architectural-styles-dataset?resource=download
