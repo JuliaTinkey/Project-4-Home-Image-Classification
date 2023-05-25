@@ -7,7 +7,7 @@ Plan:
   1. Use Keras to import and normalize the image data and split the images into testing and training groups. 
   2. Build a neural network to classify the home types. 
   3. Test the model to evaluate accuracy and make improvements.
-  4. Use HTML to build a wesbite to classify an image: the website will allow someone to upload an image which will then classify the image among the Modern or Traditional style.
+  4. Use HTML to build a website to classify an image: the website will allow someone to upload an image which will then classify the image among the Modern or Traditional style.
 
 Applications/Tools:
   1. Machine Learning: 
