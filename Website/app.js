@@ -47,3 +47,9 @@ function handleDrop(event) {
     reader.readAsDataURL(droppedFile);
   }
 }
+
+let model;
+async function loadModel() {
+  model = await tf.loadLayersModel('model.json');
+}
+loadModel();
