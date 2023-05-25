@@ -19,7 +19,7 @@ Applications/Tools:
   4. Python Pandas / Python Matplotlib
 
 Topic- Image Classification via Architectural Style: 
-  1. Modern: Bauhas , Deconstructivism, International Style, Postmodern, and Novelty Architecture
+  1. Modern: Bauhaus , Deconstructivism, International Style, Postmodern, and Novelty Architecture
   2. Traditional: American Foursquare, Georgian, Tudor Revival, Greek Revival, Palladian, and Queen Anne Architecture.
 
 Data Source: Kaggle (images of 100-200 per style) 
