@@ -34,22 +34,23 @@ function handleDrop(event) {
 
   // Check if the dropped file is an image
   if (droppedFile.type.startsWith('image/')) {
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      // Create an image element and set the source
-      const image = document.createElement('img');
-      image.src = e.target.result;
-      image.style.width = '100px'; // Adjust the width as desired
-
-      // Append the image to the box
-      box.appendChild(image);
-    };
-    reader.readAsDataURL(droppedFile);
+    uploadImage(droppedFile);
   }
 }
 
-let model;
-async function loadModel() {
-  model = await tf.loadLayersModel('model.json');
-}
-loadModel();
+// Function to upload an image to the server
+fetch('http://localhost:5000', {
+  method: 'POST',
+  body: data
+})
+.then(response => response.json())
+.then(data => {
+  // Get the result element
+  const resultElement = document.getElementById('result');
+
+  // Update the result element with the classification
+  resultElement.textContent = 'Result: ' + data.result;
+})
+.catch(error => {
+  console.error('Error:', error);
+});
