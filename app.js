@@ -39,18 +39,23 @@ function handleDrop(event) {
 }
 
 // Function to upload an image to the server
-fetch('http://localhost:5000', {
-  method: 'POST',
-  body: data
-})
-.then(response => response.json())
-.then(data => {
-  // Get the result element
-  const resultElement = document.getElementById('result');
+function uploadImage(file) {
+  const data = new FormData();
+  data.append('file', file);
 
-  // Update the result element with the classification
-  resultElement.textContent = 'Result: ' + data.result;
-})
-.catch(error => {
-  console.error('Error:', error);
-});
+  fetch('https://image-api-production-87ba.up.railway.app', {
+    method: 'POST',
+    body: data
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Get the result element
+    const resultElement = document.getElementById('result');
+
+    // Update the result element with the classification
+    resultElement.textContent = 'Result: ' + data.result;
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
