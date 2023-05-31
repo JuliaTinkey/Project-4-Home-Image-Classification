@@ -1,9 +1,21 @@
-from flask import Flask, request, redirect, url_for
+from flask import Flask, request, jsonify
 import numpy as np
+import os
 from keras.models import load_model
 from keras.preprocessing import image
+from google.cloud import storage
 
 app = Flask(__name__)
+
+# Set up the Google Cloud Storage client
+storage_client = storage.Client.from_service_account_json('utopian-precept-383721-4faeabe1c883.json')
+
+# Get your bucket
+bucket = storage_client.get_bucket('image_class_0530')
+
+# Download your model file
+blob = bucket.blob('image_class_0530/ModernVTraditional.h5')
+blob.download_to_filename('ModernVTraditional.h5')
 
 # Load the model
 model = load_model('ModernVTraditional.h5')
@@ -42,4 +54,3 @@ def upload_file():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
