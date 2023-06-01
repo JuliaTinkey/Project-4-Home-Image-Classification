@@ -15,7 +15,7 @@ body {
 /* Background image */
 body::after {
   content: "";
-  background-image: url("https://media.istockphoto.com/id/613034406/photo/green-grass-field-of-public-park-in-morning-light.jpg?s=612x612&w=0&k=20&c=-uNlgILjNtqLe4SzvbXB5QwXgIeCAVpA4PjFQTMX4x0=");
+  background-image: url("https://images.squarespace-cdn.com/content/v1/56ec32ddc2ea51bd674b7933/1617661759413-QRPPCPO6JALQ51MEIVEQ/606b8f2b0150c.jpg?format=2500w");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -38,7 +38,8 @@ h1, p {
 h1 {
   text-align: center;
   margin-top: 20px;
-  color: #000000
+  color: #000000;
+  font-size: 48px;
 }
 
 /* Drop box styles */
@@ -46,14 +47,24 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: 100%; /* Added to center horizontally */
 }
 
-#box {
+/* #box {
   border: 2px solid #ffffff;
   padding: 20px;
   text-align: center;
   cursor: pointer;
+} */
+#box {
+  border: 2px solid #ffffff;
+  padding: 40px; /* increased from 20px to make the box larger */
+  text-align: center;
+  cursor: pointer;
+  max-width: 500px; /* This will ensure your box doesn't become too large on wide screens */
+  height: 200px; /* New property to adjust the height of the box */
+  width: 70%; /* This will make the box take up 80% of its container's width, you can adjust this */
+  margin: auto; /* This will center your box */
 }
 
 #box p {
@@ -62,4 +73,15 @@ h1 {
 
 .dragover {
   border-color: #000;
+}
+
+#result {
+  font-size: 32px; /* New property to adjust the size of the result text */
+  color: #730505
+}
+
+#description {
+  font-size: 18px; /* New property to adjust the size of the result text */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.65); /* New property for white background with 80% opacity */
 }
