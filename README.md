@@ -8,6 +8,7 @@ Plan:
   2. Build a neural network to classify the home types. 
   3. Test the model to evaluate accuracy and make improvements.
   4. Use HTML to build a website to classify an image: the website will allow someone to upload an image which will then classify the image among the Modern or Traditional style.
+  5. Used Railway to help build / access the webiste: https://github.com/robotscott94/Image-Classification-Backend
 
 Applications/Tools:
   1. Machine Learning: 
@@ -17,6 +18,7 @@ Applications/Tools:
       - NumPy
   3. HTML/CSS
   4. Python Pandas / Python Matplotlib
+  5. Railway
 
 Topic- Image Classification via Architectural Style: 
   1. Modern: Bauhaus , Deconstructivism, International Style, Postmodern, and Novelty Architecture
